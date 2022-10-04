@@ -6,131 +6,89 @@
     padding-bottom: 3px
   }
 </style>
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <p>Les pages sont utilisées pour afficher du contenu vidéo dans une application {{site.product}}. Pour créer et gérer des pages, ouvrez le<strong> module</strong> Mise en page en cliquant sur<strong> Mise</strong> en page dans la navigation principale. La liste des pages qui ont été créées s'affiche dans la marge de gauche.</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-layout-img/pages-home.png" alt="accueil layout"> </figure>
 
-  <section class="bcls-section">
-    <p>Pages are used to display video content in a {{ site.product }} application. To create and manage pages, open the <strong>Layout</strong> module by clicking <strong>Layout</strong> in the primary navigation. A list of pages that have been created are displayed in the left margin.</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-layout-img/pages-home.png" alt="layout home">
-    </figure>
-
-    <p>The homepage provides the ability to:</p>
+    <p>La page d'accueil permet de:</p>
     <ul>
-      <li><a href="#create">Create pages</a></li>
-      <li><a href="#edit">Edit pages</a></li>
-      <li><a href="#duplicate">Duplicate pages</a></li>
-      <li><a href="#rearrange">Rearrange page order</a></li>
-      <li><a href="#archive">Archive, restore and delete pages</a></li>
-    </ul>
-
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="create">Creating pages</h2>
+      <li><a href="#create">Créer des pages</a></li>
+      <li><a href="#edit">Modifier les pages</a></li>
+      <li><a href="#duplicate">Pages en double</a></li>
+      <li><a href="#rearrange">Réorganiser l'ordre des pages</a></li>
+      <li><a href="#archive">Archiver, restaurer et supprimer des pages</a></li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="create">Création de pages</h2>
     <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Layout</strong> module.</li>
-      <li>In the navigation panel, at the top of the page list, click <span class="button-blue-text">+ Create Page</span>:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/help/create-top-of-page-list.png" alt="create top of page list">
-        </figure>
+      <li>Ouvrez le<strong> module</strong> Layout.</li>
+      <li>Dans le panneau de navigation, en haut de la liste des pages, cliquez sur<span class="button-blue-text"> + Créer une page</span>: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/help/create-top-of-page-list.png" alt="créer une liste de haut de page"> </figure>
       </li>
-      <li>Check to be sure the new page panel opens:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/pages-new-page.png" alt="new page panel">
-        </figure>
+      <li>Vérifiez que le nouveau panneau de page s'ouvre: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/pages-new-page.png" alt="nouveau panneau de page"> </figure>
       </li>
-      <li>Enter a <strong>Page Name</strong>. The number of characters allowed exceeds what you would practically want for a page title, so title length is not a concern. You are NOT allowed to use any special characters in the name.
+      <li>Saisissez un nom de<strong> page</strong>. Le nombre de caractères autorisés dépasse ce que vous souhaiteriez pratiquement pour un titre de page, donc la longueur du titre n'est pas un problème. Vous n'êtes PAS autorisé à utiliser des caractères spéciaux dans le nom.
         <!--         <aside class="bcls-aside bcls-aside--information">Note: After you enter the page name, a system generated, internal name is created and is displayed below the page name. This internal name cannot be changed. Your entry here is also the page title, which users see in the your apps, but this can be changed.</aside> -->
       </li>
-      <li>Next choose the page layout, which controls how your video content is displayed on the page. For each layout you can read the description and click the layout from the list to see a skeleton preview display of the layout.
-        <aside class="bcls-aside bcls-aside--tip">For complete details, including screenshots of how the individual page layout appears in a {{ site.product }} web app, see the <a href="/layout/using-page-layouts.html">Using Page Layouts</a> document.</aside>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/layout-preview.png" alt="layout preview">
-        </figure>
+      <li>Choisissez ensuite la mise en page, qui contrôle la façon dont votre contenu vidéo s'affiche sur la page. Pour chaque mise en page, vous pouvez lire la description et cliquer sur la mise en page dans la liste pour afficher un aperçu du squelette de la mise en page. <aside class="bcls-aside bcls-aside--tip">Pour plus de détails, y compris des captures d'écran de la mise en page individuelle apparaît dans une application Web {{site.product}}, consultez le<a href="/layout/using-page-layouts.html"> document</a> Utilisation des mises en page.</aside> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/layout-preview.png" alt="aperçu de la disposition"> </figure>
       </li>
-      <li>At the bottom of the navigation panel, click <span class="button-blue">Create</span> to create the page.</li>
-      <li>At this point, you can:
+      <li>En bas du panneau de navigation, cliquez sur<span class="button-blue"> Créer</span> pour créer la page.</li>
+      <li>À ce stade, vous pouvez:
         <ol type="a">
-          <li>See the page is unpublished by default.</li>
-          <li>Click <span class="button-blue">PUBLISH</span> to publish the page.</li>
-          <li>Edit page settings, including page title.</li>
-          <li>Change the page layout (on hover).</li>
-          <li>Click <span class="button-blue-text">Add playlist</span> to add video content to your page.</li>
-          <li>Configure page availability.</li>
-        </ol>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/page-info-after-creation.png" alt="page actions after creation">
-        </figure>
+          <li>Voir que la page n'est pas publiée par défaut.</li>
+          <li>Cliquez sur<span class="button-blue"> PUBLIER</span> pour publier la page.</li>
+          <li>Modifier les paramètres de page, y compris le titre de la page</li>
+          <li>Modifiez la mise en page (au survol).</li>
+          <li>Cliquez sur<span class="button-blue-text"> Ajouter une liste</span> de lecteur pour ajouter du contenu vidéo à votre page.</li>
+          <li>Configuration de la disponibilité des pages.</li>
+        </ol> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/page-info-after-creation.png" alt="actions de page après la création"> </figure>
       </li>
-      The page settings <img class="imageWithText" src="/assets/images/s-layout-img/page-settings-3.png" alt="stamp number 3"> that can be configured are:
+      Les paramètres de la page <img class="imageWithText" src="/assets/images/s-layout-img/page-settings-3.png" alt="timbre numéro 3"> qui peuvent être configurés sont les suivants:
       <ul>
-        <li>Title & Translations</li>
-        <li>Availability (<strong>Schedule</strong>, <strong>Devices</strong> and <strong>Locations</strong>)</li>
-        <li><strong>Archive page</strong> button</li>
+        <li>Titre et traductions</li>
+        <li>Disponibilité (<strong>calendrier</strong>,<strong> appareils</strong> et<strong> emplacements</strong>)</li>
+        <li><strong></strong>Bouton Archiver la page</li>
       </ul>
-      <li>If you wish to return to the list of pages, click the vertical <span class="button-blue-text">Back to All Pages</span> link. The page that was created is displayed in the list of pages.</li>
+      <li>Si vous souhaitez revenir à la liste des pages, cliquez sur le<span class="button-blue-text"> lien vertical</span> Retour à toutes les pages. La page créée s'affiche dans la liste des pages.</li>
     </ol>
-    <p>For more information on adding videos to a page and configuring page availability see the following documents:
+    <p>Pour plus d'informations sur l'ajout de vidéos à une page et la configuration de la disponibilité des pages, consultez les documents suivants:
     <ul>
-      <li><a href="/layout/managing-playlists-on-pages.html">Managing Playlists on Pages</a></li>
-      <li><a href="/layout/configuring-page-availability.html">Configuring Page Availability</a></li>
+      <li><a href="/layout/managing-playlists-on-pages.html">Gérer les listes de lecteur sur les pages</a></li>
+      <li><a href="/layout/configuring-page-availability.html">Configuration de la disponibilité des</a></li>
     </ul>
-    </p>
-  </section>
+    </p>  </section><section class="bcls-section">
+    <h2 id="edit">Édition de pages</h2>
+    <p>Pour modifier une page, à partir de la<strong> page d'index du</strong> module Mise en page, cliquez sur la page à modifier. Les paramètres de la page s'affichent.</p> <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-layout-img/pages-settings.png" /></figure>
+    <h3 id="page-title">Modification du titre de la page</h3>
+    <p>Pour modifier le titre de la page, cliquez sur en<img class="ui-image" alt="" src="/assets/images/common/gear-blue.png" /> regard du titre de la page et saisissez un nouveau titre. Vous pouvez également modifier le titre dans plusieurs langues, si elles sont activées pour vos applications.</p>
 
-  <section class="bcls-section">
-    <h2 id="edit">Editing pages</h2>
-    <p>To edit a page, from the <strong>Layout</strong> module index page, click on the page to edit. The page settings are displayed.</p>
-
-    <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-layout-img/pages-settings.png" /></figure>
-    <h3 id="page-title">Editing the page title</h3>
-    <p>To edit the page title, click <img class="ui-image" alt="" src="/assets/images/common/gear-blue.png" /> next to the page title and enter a new title. You can also edit the title in multiple languages, if they are enabled for your apps.</p>
-
-    <h3>Editing the page layout</h3>
-    <p>To edit the layout, hover over the current layout then click <span class="button-blue-text">Change</span>. Click on a new layout then click <span class="button-blue-text">Select</span>.</p>
+    <h3>Modification de la mise en page</h3>
+    <p>Pour modifier la mise en page, passez la souris sur la mise en page actuelle, puis cliquez sur<span class="button-blue-text"> Modifier</span>. Cliquez sur une nouvelle mise en page, puis sur<span class="button-blue-text"> Sélectionner</span>.</p>
     <div style="position: relative; display: block; max-width: 300px;">
       <div style="padding-top: 151.4%;"><iframe src="https://players.brightcove.net/6225316964001/default_default/index.html?videoId=6264781216001" allowfullscreen="" allow="encrypted-media" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
-    </div>
-    <aside class="bcls-aside bcls-aside--tip">You may see a message stating that a selected page layout may not support the number of playlists you had selected for the previously used layout.</aside>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="duplicate">Duplicating pages</h2>
-    <p>Duplicating pages can be useful when you need to create a new page that is similar to an existing page. To duplicate a page, hover over the page name and click <img class="ui-image" src="/assets/images/common/duplicate-blue.png" alt="duplicate icon">.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-layout-img/pages-duplicate.png" /></figure>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="rearrange">Rearranging page order</h2>
-    <p>The order of the pages in the left navigation determines the order of the display in a {{ site.product_short }} application. To change the page order, click on the handle in front of the video name (three rows of two dots) and drag it to a new location.</p>
-    <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-layout-img/pages-rearrange.png" /></figure>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="archive">Archiving, restoring and deleting pages</h2>
-    <p>Archiving a page removes it from the application but it does not delete the page. To archive a page, follow these steps:</p>
+    </div> <aside class="bcls-aside bcls-aside--tip">Vous pouvez voir un message indiquant qu'une mise en page sélectionnée peut ne pas prendre en charge le nombre de listes de lecteur que vous avez sélectionnées pour la mise en page précédemment utilisée.</aside> </section> <section class="bcls-section">
+    <h2 id="duplicate">Duplication de pages</h2>
+    <p>La duplication de pages peut être utile lorsque vous devez créer une nouvelle page similaire à une page existante. Pour dupliquer une page, survolez le nom de la page et cliquez sur <img class="ui-image" src="/assets/images/common/duplicate-blue.png" alt="icône dupliquer">.</p>   <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-layout-img/pages-duplicate.png" /></figure></section><section class="bcls-section">
+    <h2 id="rearrange">Réorganisation de l'ordre des pages</h2>
+    <p>L'ordre des pages dans le menu de navigation de gauche détermine l'ordre d'affichage dans une application {{site.product_short}}. Pour modifier l'ordre des pages, cliquez sur la poignée en regard du nom de la vidéo (trois rangées de deux points) et faites-la glisser vers un nouvel emplacement.</p>   <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/s-layout-img/pages-rearrange.png" /></figure></section><section class="bcls-section">
+    <h2 id="archive">Archivage, restauration et suppression de pages</h2>
+    <p>L'archivage d'une page la supprime de l'application mais ne supprime pas la page. Pour archiver une page, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Hover over a page then click <img class="ui-image" alt="settings icon" src="/assets/images/common/gear-blue.png" /> next to the page name. This opens the <strong>Page Settings</strong> dialog.</li>
-      <li>On the bottom-left of the page settings dialog, click <strong>Archive page</strong>.</li>
-      <li>Note that the page is immediately archived and you are returned to the index page of the Layout module with the archived page no longer in the page list.</li>
+      <li>Passez la souris sur une page, puis cliquez sur <img class="ui-image" alt="icône des paramètres" src="/assets/images/common/gear-blue.png" /> en regard du nom de la page. La boîte de<strong> dialogue Paramètres de</strong> page s'ouvre.</li>
+      <li>En bas à gauche de la boîte de dialogue des paramètres de page, cliquez sur<strong> Archiver la page</strong>.</li>
+      <li>Notez que la page est immédiatement archivée et que vous revenez à la page d'index du module Disposition alors que la page archivée ne figure plus dans la liste des pages.</li>
     </ol>
-    <p>To restore or permanently delete the archived page, follow these steps:</p>
+    <p>Pour restaurer ou supprimer définitivement la page archivée, procédez comme suit:</p>
     <ol class="bcls-tasklist">
-      <li>At the very bottom of the navigation panel, click the link that shows the number of archived page:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/pages-archived.png" alt="number or archived pages">
-        </figure>
+      <li>Tout en bas du panneau de navigation, cliquez sur le lien qui indique le nombre de pages archivées: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/pages-archived.png" alt="nombre de pages archivées"> </figure>
       </li>
-      <li>Confirm that the list of archived page appears:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/pages-archive-delete-restore.png" alt="restore or delete">
-        </figure>
+      <li>Vérifiez que la liste des pages archivées s'affiche: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/pages-archive-delete-restore.png" alt="restaurer ou supprimer"> </figure>
       </li>
-      <li>Hover over the page you wish to restore/delete.</li>
-      <li>Click <img class="ui-image" src="/assets/images/common/restore-page-circle.png" alt="restore page"> to restore the archived page, or click the <img class="ui-image" src="/assets/images/common/blue-trash-can.png" alt="delete page"> to <strong>permanently delete</strong> the page.</li>
-      <li>Confirm that you are returned to the index page of the Layout module where you see the page list. If you restored a page it will appear in the page list, but in an unpublished state.</li>
-    </ol>
-  </section>
-</article>
+      <li>Passez la souris sur la page que vous souhaitez restaurer/supprimer.</li>
+      <li>Cliquez <img class="ui-image" src="/assets/images/common/restore-page-circle.png" alt="page de restauration"> pour restaurer la page archivée, ou cliquez sur le bouton <img class="ui-image" src="/assets/images/common/blue-trash-can.png" alt="supprimer la page"> pour supprimer<strong> définitivement</strong> la page.</li>
+      <li>Vérifiez que vous revenez à la page d'index du module Mise en page où vous voyez la liste des pages. Si vous avez restauré une page, elle apparaîtra dans la liste des pages, mais dans un état non publié.</li>
+    </ol>  </section></article>

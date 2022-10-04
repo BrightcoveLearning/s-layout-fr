@@ -1,321 +1,277 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>The Universal Syndication functionality is used for the following tasks:</p>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">Présentation</h2>
+    <p>La fonctionnalité Universal Syndication est utilisée pour les tâches suivantes:</p>
     <ul>
-      <li>Create an <strong>Apple UMC Catalog CSV</strong> and/or <strong>Apple UMC Availability CSV</strong> template(s) that generates a data report that is submitted to Apple to enable universal search.</li>
-      <li>Create a <strong>Google site map XML</strong> template that generates a data report that is used with Google search.</li>
-      <li>Create a <strong>Sitemap index XML</strong> template that generates a data report that is used as a sitemap.</li>
-      <li>Create a <strong>Roku Search Feed 2.0</strong> template that generates a data report that is submitted to Roku to enable universal search.</li>
+      <li>Créez un fichier CSV<strong> Apple UMC Catalog</strong> et/ou un ou plusieurs<strong> modèles</strong> Apple UMC Availability CSV qui génèrent un rapport de données soumis à Apple pour permettre la recherche universelle.</li>
+      <li>Créez un<strong> modèle XML de plan de site</strong> Google qui génère un rapport de données utilisé avec la recherche Google.</li>
+      <li>Créez un<strong> modèle XML d'index</strong> Sitemap qui génère un rapport de données utilisé comme plan du site.</li>
+      <li>Créez un<strong> modèle de flux de recherche</strong> Roku 2.0 qui génère un rapport de données soumis à Roku pour permettre la recherche universelle.</li>
     </ul>
-    <p>The basic steps to create one of these data reports is:</p>
+    <p>Les étapes de base pour créer l'un de ces rapports de données sont les suivantes:</p>
     <ol>
-      <li>Add a new template</li>
-      <li>Create a new job that uses the template.</li>
-      <li>Run the job, either manually or on a schedule, to produce the desired data report.</li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Adding_a_new_template">Adding a new template</h2>
-    <p>To add a new template follow these steps:</p>
+      <li>Ajouter un nouveau modèle</li>
+      <li>Créez une nouvelle tâche qui utilise le modèle.</li>
+      <li>Exécutez la tâche, manuellement ou selon un calendrier, pour produire le rapport de données souhaité.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Adding_a_new_template">Ajout d'un nouveau modèle</h2>
+    <p>Pour ajouter un nouveau modèle, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
-      <li>In Studio, select <strong>Layout</strong>, then click the gear icon to enter the app settings.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/click-gear.png" alt="click gear icon">
-        </figure>
+      <li>Dans Studio, sélectionnez<strong> Disposition</strong>, puis cliquez sur l'icône en forme de roue dentée pour accéder aux paramètres de l'application. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/click-gear.png" alt="icône de roue dentée"> </figure>
       </li>
-      <li>From <strong>App settings</strong>, under <strong>Data export</strong> click <strong>Universal search data</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/app-settings.png" alt="click Universal search data">
-        </figure>
+      <li>Dans Paramètres de<strong> l'application</strong>, sous Exportation<strong> des données,</strong> cliquez sur Données<strong> de recherche</strong> universelles <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/app-settings.png" alt="cliquez sur Données de recherche universelles"> </figure>
       </li>
-      <li>Be sure <strong>Configure templates</strong> is selected, then click <strong>Add new template</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/add-new-template.png" alt="add new template">
-        </figure>
+      <li>Assurez-vous que l'option<strong> Configurer les modèles</strong> est sélectionnée, puis cliquez sur<strong> Ajouter un nouveau modèle</strong>. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/add-new-template.png" alt="ajouter un nouveau modèle"> </figure>
       </li>
-      <li>Supply a <strong>Template name</strong>. This name is for internal use and viewed only in Studio.</li>
-      <li>Choose a <strong>Platform and format type</strong>. Based on your selection different options are presented.
-        <aside class="bcls-aside bcls-aside--information language-editable">Later in this document each <strong>Platform and format type</strong> will be detailed.</aside>
+      <li>Indiquez un nom de<strong> modèle</strong>. Ce nom est destiné à un usage interne et affiché uniquement dans Studio.</li>
+      <li>Choisissez une<strong> plate-forme et un type de format</strong>. En fonction de votre sélection, différentes options sont présentées. <aside class="bcls-aside bcls-aside--information language-editable">Plus loin dans ce document, chaque<strong> plate-forme et chaque type de format</strong> seront détaillés.</aside>
       </li>
-      <li>Complete the form based on the type selected.</li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Creating_and_using_a_new_job">Creating and using a new job</h2>
+      <li>Remplissez le formulaire en fonction du type sélectionné.</li>
+      <li>Cliquez sur<strong> Enregistrer</strong>.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Creating_and_using_a_new_job">Création et utilisation d'un nouvel emploi</h2>
     <p></p>
     <ol class="bcls-tasklist">
-      <li>From the <strong>App settings</strong> screen be sure <strong>Mange jobs</strong> is selected, then click <strong>Create new job</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/create-new-job.png" alt="create new job">
-        </figure>
+      <li>Dans l'<strong>écran Paramètres de l'</strong>application, assurez-vous que l'option<strong> Gérer les tâches</strong> est sélectionnée, puis cliquez sur<strong> Créer une nouvelle tâche</strong>. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/create-new-job.png" alt="créer un nouvel emploi"> </figure>
       </li>
-      <li>Supply a <strong>Job name</strong>. This name is for internal use and viewed only in Studio.</li>
-      <li>Select the template(s) you wish to use for this job by clicking the checkbox(es) in front of the template(s) name.</li>
-      <li>From the <strong>Schedule job run frequency</strong> choose your wanted frequency. Note that repeated time is based on the current day of week and time the selection is made. This can be changed by running a job manually, which resets the day of week and time.</li>
-      <li>Click <strong>Confirm</strong>.</li>
-      <li>Back on the <strong>Manage jobs</strong> screen, note that you can also delete, edit and manually run a job.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/delete-edit-run-job.png" alt="delete edit run job">
-        </figure>
+      <li>Indiquez un nom de<strong> poste</strong>. Ce nom est destiné à un usage interne et affiché uniquement dans Studio.</li>
+      <li>Sélectionnez le ou les modèles que vous souhaitez utiliser pour cette tâche en cochant la ou les cases à cocher en regard du nom du ou des modèles.</li>
+      <li>Dans la section<strong> Schedule job run frequency,</strong> choisissez la fréquence que vous souhaitez. Notez que le temps répété est basé sur le jour de la semaine et l'heure de la sélection. Cela peut être modifié en exécutant une tâche manuellement, ce qui réinitialise le jour de la semaine et l'heure.</li>
+      <li>Cliquez sur<strong> Confirmer</strong>.</li>
+      <li>De retour sur l'<strong>écran</strong> Gérer les tâches, notez que vous pouvez également supprimer, modifier et exécuter manuellement une tâche. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/delete-edit-run-job.png" alt="supprimer, modifier, exécuter la tâche"> </figure>
       </li>
-      <li>To download the file(s) from the jobs created, in the <strong>Results</strong> column click the down arrow. The file or files created appear and click the filename to begin the download process.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/download.png" alt="download a file">
-        </figure>
+      <li>Pour télécharger le (s) fichier (s) à partir des tâches créées, dans la<strong> colonne</strong> Résultats, cliquez sur la flèche vers le bas. Le ou les fichiers créés apparaissent et cliquez sur le nom du fichier pour lancer le processus de téléchargement. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/download.png" alt="télécharger un fichier"> </figure>
       </li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Platform_and_format_type_options">Platform and format type options</h2>
-    <p>When creating a new template you choose a <strong>Platform and format type</strong>. Based on the type selection a form appears that you will complete. This section details the information needed for each type. The types are:</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Platform_and_format_type_options">Options de plate-forme et de type de format</h2>
+    <p>Lorsque vous créez un nouveau modèle, vous choisissez une<strong> plate-forme et un type de format</strong>. En fonction de la sélection du type, un formulaire apparaît que vous devez remplir. Cette section détaille les informations nécessaires pour chaque type. Les types sont les suivants:</p>
     <ul>
-      <li><a href="#Apple_UMC_Catalog_CSV">Apple UMC Catalog CSV</a></li>
-      <li><a href="#Apple_UMC_Availability_CSV">Apple UMC Availability CSV</a></li>
-      <li><a href="#Google_site_map_XML">Google site map XML</a></li>
-      <li><a href="#Sitemap_index_XML">Sitemap index XML</a></li>
-      <li><a href="#Roku_Search_Feed_2.0">Roku Search Feed 2.0 (JSON)</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--tip language-editable">Configuration of the options is most likely a collaboration with you and Brightcove's OTT Delivery Team.</aside>
+      <li><a href="#Apple_UMC_Catalog_CSV">Catalogue CSV Apple UMC</a></li>
+      <li><a href="#Apple_UMC_Availability_CSV">CSV de disponibilité Apple UMC</a></li>
+      <li><a href="#Google_site_map_XML">Plan du site Google XML</a></li>
+      <li><a href="#Sitemap_index_XML">XML d'index de plan</a></li>
+      <li><a href="#Roku_Search_Feed_2.0">Flux de recherche Roku 2.0 (JSON)</a></li>
+    </ul> <aside class="bcls-aside bcls-aside--tip language-editable">La configuration des options est probablement le fruit d'une collaboration avec vous et l'équipe de livraison OTT de Brightcove.</aside>
 
-    <h3 id="Apple_UMC_Catalog_CSV">Apple UMC Catalog CSV</h3>
+    <h3 id="Apple_UMC_Catalog_CSV">Catalogue CSV Apple UMC</h3>
     <ul>
       <li>
-        <p><strong>Use case</strong>: The Apple UMC Catalog CSV syndication type is used by customers participating in Apple universal search integration via Apple’s non-public Sequence integration tools.</p>
+        <p><strong>Cas d'utilisation</strong>: Le type de syndication CSV Apple UMC Catalog est utilisé par les clients participant à l'intégration universelle de la recherche Apple via les outils d'intégration Sequence non publics d'Apple.™</p>
       </li>
       <li>
-        <p><strong>Blank form appearance</strong>:</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/apple-umc-catalog-csv.png" alt="Apple UMC Catalog CSV">
-        </figure>
+        <p><strong>Apparence du formulaire vierge</strong>:</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/apple-umc-catalog-csv.png" alt="Catalogue CSV Apple UMC"> </figure>
       </li>
       <li>
-        <p><strong>Form field definitions</strong>:</p>
+        <p><strong>Définitions des champs de formulaire</strong>:</p>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field name</th>
-              <th>Definition</th>
+              <th>Nom du champ</th>
+              <th>Définition</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td><strong>Template name</strong></td>
-              <td>Internal Studio name; not viewer facing</td>
+              <td><strong>Nom du modèle</strong></td>
+              <td>Nom interne du studio&nbsp;; ne fait pas face au spectateur</td>
             </tr>
             <tr>
-              <td><strong>Asset types</strong></td>
-              <td>The assets types you wish to include in the generated data report</td>
+              <td><strong>Types d'actifs</strong></td>
+              <td>Les types d'actifs que vous souhaitez inclure dans le rapport de données généré</td>
             </tr>
             <tr>
-              <td><strong>File name</strong></td>
-              <td>Your chosen name for the file that is generated; note the <strong>.csv</strong> extension will automatically be added to your supplied file name</td>
+              <td><strong>Nom du fichier</strong></td>
+              <td>Nom que vous avez choisi pour le fichier généré&nbsp;; notez que l'<strong>extension</strong> .csv sera automatiquement ajoutée au nom de fichier que vous avez fourni</td>
             </tr>
           </tbody>
         </table>
       </li>
     </ul>
 
-    <h3 id="Apple_UMC_Availability_CSV">Apple UMC Availability CSV</h3>
+    <h3 id="Apple_UMC_Availability_CSV">CSV de disponibilité Apple UMC</h3>
     <ul>
       <li>
-        <p><strong>Use case</strong>: The Apple UMC Availability CSV syndication type is used by customers participating in Apple universal search integration via Apple’s non-public Sequence integration tools.</p>
+        <p><strong>Cas d'utilisation</strong>: Le type de syndication CSV Apple UMC Availability est utilisé par les clients participant à l'intégration universelle de la recherche Apple via les outils d'intégration Sequence non publics d'Apple.™</p>
       </li>
       <li>
-        <p><strong>Blank form appearance</strong>:</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/apple-umc-availability-csv.png" alt="Apple UMC Catalog CSV">
-        </figure>
+        <p><strong>Apparence du formulaire vierge</strong>:</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/apple-umc-availability-csv.png" alt="Catalogue CSV Apple UMC"> </figure>
       </li>
       <li>
-        <p><strong>Form field definitions</strong>:</p>
+        <p><strong>Définitions des champs de formulaire</strong>:</p>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field name</th>
-              <th>Definition</th>
+              <th>Nom du champ</th>
+              <th>Définition</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td><strong>Template name</strong></td>
-              <td>Internal Studio name; not viewer facing</td>
+              <td><strong>Nom du modèle</strong></td>
+              <td>Nom interne du studio&nbsp;; ne fait pas face au spectateur</td>
             </tr>
             <tr>
-              <td><strong>Asset types</strong></td>
-              <td>The assets types you wish to include in the generated data report</td>
+              <td><strong>Types d'actifs</strong></td>
+              <td>Les types d'actifs que vous souhaitez inclure dans le rapport de données généré</td>
             </tr>
             <tr>
-              <td><strong>File name</strong></td>
-              <td>Your chosen name for the file that is generated; note the <strong>.csv</strong> extension will automatically be added to your supplied file name</td>
+              <td><strong>Nom du fichier</strong></td>
+              <td>Nom que vous avez choisi pour le fichier généré&nbsp;; notez que l'<strong>extension</strong> .csv sera automatiquement ajoutée au nom de fichier que vous avez fourni</td>
             </tr>
             <tr>
-              <td><strong>Target geography</strong></td>
-              <td>The country for which the template is targeted</td>
+              <td><strong>Géographie cible</strong></td>
+              <td>Le pays pour lequel le modèle est ciblé</td>
             </tr>
             <tr>
-              <td><strong>Universal link prefix</strong></td>
-              <td>Pointer to the Beacon app; enables searched assets to open in the app</td>
+              <td><strong>Préfixe de lien universel</strong></td>
+              <td>Pointeur sur l'application Beacon&nbsp;; permet aux ressources recherchées de s'ouvrir dans l'application</td>
             </tr>
           </tbody>
         </table>
       </li>
     </ul>
 
-    <h3 id="Google_site_map_XML">Google site map XML</h3>
+    <h3 id="Google_site_map_XML">Plan du site Google XML</h3>
     <ul>
       <li>
-        <p><strong>Use case</strong>: The Google site map XML syndication type generates files necessary to participate in Beacon’s new SEO strategy.</p>
+        <p><strong>Cas d'utilisation</strong>: Le type de syndication XML du plan de site Google génère les fichiers nécessaires pour participer à la nouvelle stratégie de référencement de Beacon™.</p>
       </li>
       <li>
-        <p><strong>Blank form appearance</strong>:</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/google-site-map-xml.png" alt="Google site map XML">
-        </figure>
+        <p><strong>Apparence du formulaire vierge</strong>:</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/google-site-map-xml.png" alt="Plan du site Google XML"> </figure>
       </li>
       <li>
-        <p><strong>Form field definitions</strong>:</p>
+        <p><strong>Définitions des champs de formulaire</strong>:</p>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field name</th>
-              <th>Definition</th>
+              <th>Nom du champ</th>
+              <th>Définition</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td><strong>Template name</strong></td>
-              <td>Internal Studio name; not viewer facing</td>
+              <td><strong>Nom du modèle</strong></td>
+              <td>Nom interne du studio&nbsp;; ne fait pas face au spectateur</td>
             </tr>
             <tr>
-              <td><strong>Asset types</strong></td>
-              <td>The assets types you wish to include in the generated data report</td>
+              <td><strong>Types d'actifs</strong></td>
+              <td>Les types d'actifs que vous souhaitez inclure dans le rapport de données généré</td>
             </tr>
             <tr>
-              <td><strong>File name</strong></td>
-              <td>Your chosen name for the file that is generated; a name is suggested, but it may be changed</td>
+              <td><strong>Nom du fichier</strong></td>
+              <td>Nom que vous avez choisi pour le fichier généré&nbsp;; un nom est suggéré, mais il peut être modifié</td>
             </tr>
             <tr>
-              <td><strong>Beacon application name</strong></td>
-              <td>Consult Brightcove's OTT Delivery Team to obtain this value</td>
+              <td><strong>Nom d'application Beacon</strong></td>
+              <td>Consultez l'équipe de livraison OTT de Brightcove pour obtenir cette valeur</td>
             </tr>
             <tr>
-              <td><strong>Universal link prefix</strong></td>
-              <td>Pointer to the Beacon app; enables searched assets to open in the app</td>
+              <td><strong>Préfixe de lien universel</strong></td>
+              <td>Pointeur sur l'application Beacon&nbsp;; permet aux ressources recherchées de s'ouvrir dans l'application</td>
             </tr>
             <tr>
-              <td><strong>Publish to web</strong></td>
-              <td>Publishes site map to a specific URL based on Beacon application file name</td>
+              <td><strong>Publier sur le Web</strong></td>
+              <td>Publie le plan du site sur une URL spécifique basée sur le nom du fichier d'application Beacon</td>
             </tr>
           </tbody>
         </table>
       </li>
     </ul>
 
-    <h3 id="Sitemap_index_XML">Sitemap index XML</h3>
+    <h3 id="Sitemap_index_XML">XML d'index de plan</h3>
     <ul>
       <li>
-        <p><strong>Use case</strong>: The Sitemap index XML syndication type generates files necessary to participate in Beacon’s new SEO strategy</p>
-        <aside class="bcls-aside bcls-aside--information language-editable">The Sitemap index XML is automatically published to the web based on information provided in the form.</aside>
+        <p><strong>Cas d'utilisation</strong>: Le type de syndication XML de l'index Sitemap génère les fichiers nécessaires pour participer à la nouvelle stratégie SEO de Beaconâ €™</p> <aside class="bcls-aside bcls-aside--information language-editable">Le XML de l'index Sitemap est automatiquement publié sur le Web en fonction des informations fournies dans le formulaire.</aside>
       </li>
       <li>
-        <p><strong>Blank form appearance</strong>:</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/sitemap-index-xml.png" alt="Sitemap index XML">
-        </figure>
+        <p><strong>Apparence du formulaire vierge</strong>:</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/sitemap-index-xml.png" alt="XML d'index de plan"> </figure>
       </li>
       <li>
-        <p><strong>Form field definitions</strong>:</p>
+        <p><strong>Définitions des champs de formulaire</strong>:</p>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field name</th>
-              <th>Definition</th>
+              <th>Nom du champ</th>
+              <th>Définition</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td><strong>Template name</strong></td>
-              <td>Internal Studio name; not viewer facing</td>
+              <td><strong>Nom du modèle</strong></td>
+              <td>Nom interne du studio&nbsp;; ne fait pas face au spectateur</td>
             </tr>
             <tr>
-              <td><strong>File name</strong></td>
-              <td>Your chosen name for the file that is generated; a name is suggested, but it may be changed</td>
+              <td><strong>Nom du fichier</strong></td>
+              <td>Nom que vous avez choisi pour le fichier généré&nbsp;; un nom est suggéré, mais il peut être modifié</td>
             </tr>
             <tr>
-              <td><strong>Beacon application name</strong></td>
-              <td>Consult Brightcove's OTT Delivery Team to obtain this value</td>
+              <td><strong>Nom d'application Beacon</strong></td>
+              <td>Consultez l'équipe de livraison OTT de Brightcove pour obtenir cette valeur</td>
             </tr>
           </tbody>
         </table>
       </li>
     </ul>
 
-    <h3 id="Roku_Search_Feed_2.0">Roku Search Feed 2.0 (JSON)</h3>
+    <h3 id="Roku_Search_Feed_2.0">Flux de recherche Roku 2.0 (JSON)</h3>
     <ul>
       <li>
-        <p><strong>Use case</strong>: The Roku Search Feed syndication is used to generate catalog feed documents needed to participate in Roku Universal Search integration.</p>
+        <p><strong>Cas d'utilisation</strong>: La syndication du flux de recherche Roku est utilisée pour générer les documents de flux de catalogue nécessaires pour participer à l'intégration de Roku Universal Search.</p>
       </li>
       <li>
-        <p><strong>Blank form appearance</strong>:</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/roku-search-feed.png" alt="roku search feed">
-        </figure>
+        <p><strong>Apparence du formulaire vierge</strong>:</p> <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/universal-syndication/roku-search-feed.png" alt="flux de recherche Roku"> </figure>
       </li>
       <li>
-        <p><strong>Form field definitions</strong>:</p>
+        <p><strong>Définitions des champs de formulaire</strong>:</p>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field name</th>
-              <th>Definition</th>
+              <th>Nom du champ</th>
+              <th>Définition</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td><strong>Template name</strong></td>
-              <td>Internal Studio name; not viewer facing</td>
+              <td><strong>Nom du modèle</strong></td>
+              <td>Nom interne du studio&nbsp;; ne fait pas face au spectateur</td>
             </tr>
             <tr>
-              <td><strong>Asset types</strong></td>
-              <td>The assets types you wish to include in the generated data report</td>
+              <td><strong>Types d'actifs</strong></td>
+              <td>Les types d'actifs que vous souhaitez inclure dans le rapport de données généré</td>
             </tr>
             <tr>
-              <td><strong>File name</strong></td>
-              <td>File name of the generated data; the <strong>.json</strong> extension is added to the file name</td>
+              <td><strong>Nom du fichier</strong></td>
+              <td>Nom de fichier des données générées&nbsp;; l'<strong>extension</strong> .json est ajoutée au nom du fichier</td>
             </tr>
             <tr>
-              <td><strong>Target geography</strong></td>
-              <td>The country for which the template is targeted</td>
+              <td><strong>Géographie cible</strong></td>
+              <td>Le pays pour lequel le modèle est ciblé</td>
             </tr>
             <tr>
-              <td><strong>Universal link prefix</strong></td>
-              <td>Pointer to the Beacon app; enables searched assets to open in the app</td>
+              <td><strong>Préfixe de lien universel</strong></td>
+              <td>Pointeur sur l'application Beacon&nbsp;; permet aux ressources recherchées de s'ouvrir dans l'application</td>
             </tr>
             <tr>
-              <td><strong>Publish to web</strong></td>
-              <td>Publishes site map to a specific URL based on Beacon application file name</td>
+              <td><strong>Publier sur le Web</strong></td>
+              <td>Publie le plan du site sur une URL spécifique basée sur le nom du fichier d'application Beacon</td>
             </tr>
           </tbody>
         </table>
       </li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Possible_conflicts">Possible conflicts</h2>
-    <p>There are two conflicts possible when running jobs that use multiple templates. Those conflicts are:</p>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Possible_conflicts">Conflits possibles</h2>
+    <p>Il existe deux conflits possibles lors de l'exécution de tâches utilisant plusieurs modèles. Ces conflits sont les suivants:</p>
     <ol>
-      <li>A Beacon application cannot support a job or jobs that publish to the web that use multiple templates of the same <strong>Platform and format type</strong>. For example, a Beacon app cannot have two <strong>Google site map XML</strong> templates (or two <strong>Sitemap index XML</strong> templates).</li>
-      <li>A Beacon application cannot support a job or jobs that use multiple templates that publish to the same filename. For example, a Beacon app cannot have a <strong>Google site map XML</strong> template that publishes to <code>sitemap.xml</code> AND a <strong>Sitemap index XML</strong> template that also publishes to the same name, <code>sitemap.xml</code>. You must use different file names.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--warning language-editable">Note that these conflicts can occur across separate jobs.</aside>
-  </section>
-
-</article>
+      <li>Une application Beacon ne peut pas prendre en charge une ou plusieurs tâches publiées sur le Web qui utilisent plusieurs modèles de la même<strong> plate-forme et du même type de format</strong>. Par exemple, une application Beacon ne peut pas avoir deux<strong> modèles XML de plan de site</strong> Google (ou deux<strong> modèles XML d'index</strong> Sitemap).</li>
+      <li>Une application Beacon ne peut pas prendre en charge une ou plusieurs tâches qui utilisent plusieurs modèles publiés sous le même nom de fichier. Par exemple, une application Beacon ne peut pas avoir de<strong> modèle XML de plan de site</strong> Google qui est publié dans<code> sitemap.xml</code> ET un<strong> modèle XML d'index</strong> Sitemap qui publie sous le même nom,<code> sitemap.xml</code>. Vous devez utiliser des noms de fichiers différents.</li>
+    </ol> <aside class="bcls-aside bcls-aside--warning language-editable">Notez que ces conflits peuvent se produire entre des tâches distinctes.</aside> </section> </article>

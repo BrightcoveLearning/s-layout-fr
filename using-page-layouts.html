@@ -1,142 +1,85 @@
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-
-  <section class="bcls-section">
-    <h2 id="Unsupported_layouts">Unsupported layouts</h2>
-    <p>This topic describes all the layouts that are supported in {{ site.product_short }} Studio. Note that {{ site.product_short }} Classic had some additional layouts that are now deprecated. These layouts cannot be viewed or edited in {{ site.product_short }} Studio.</p>
-    <p>If you try to open an existing layout in {{ site.product_short }} Studio, and see this message:</p>
-    <blockquote style="padding: 2em;border: 1px #999 solid;"><strong>
-        Unsupported layout<br><br>
-        Your current layout cannot be edited in this tool. Contact support to make changes.
-      </strong></blockquote>
-    <p>you will need to <a href="https://supportportal.brightcove.com">contact Support</a> to get help in updating the layout.</p>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Page_creation_process">Page creation process</h2>
-    <p>When creating a page you are first asked to enter a title for the page, then asked to choose a page layout:</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/page-types-create-page.png" alt="">
-    </figure>
-    <p>This document will focus on the page layouts, their functionality and appearance. For information on the entire page creation process see the <a href="/layout/creating-managing-pages.html">Creating and Managing Pages</a> document.</p>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Formatting_playlists">Formatting playlists</h2>
-    <p>You have flexibility when placing playlists on a page. If you click the three ellipsis (three dots) next to the playlist name</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/three-dots-to-edit.png" alt="three dots to edit">
-    </figure>
-    <p>you bring up the playlist settings dialog. Several playlist manipulation options are presenter here.</p>
-    <p>When you click <span class="button-blue">More layout options</span> you see the playlist layout dialog, where more playlist manipulation options are offered.</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/playlist-layout-options.png" alt="playlist layout options">
-    </figure>
-    <p>Not every playlist on every page layout offers all options. Restrictions will be listed where appropriate for each page layout.</p>
-    <p>For complete details on managing and configuring playlists, see the <a href="/layout/managing-playlists-on-pages.html">Managing Playlists on Pages</a> document.</p>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Playlist_Grid">Playlist Grid</h2>
-    <p>Note the following about the <strong>Playlist Grid</strong> page layout:</p>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Unsupported_layouts">Mises en page non prises en charge</h2>
+    <p>Cette rubrique décrit toutes les mises en page prises en charge par {{site.product_short}} Studio. Notez que {{site.product_short}} Classic comportait des mises en page supplémentaires qui sont maintenant obsolètes. Ces mises en page ne peuvent pas être affichées ou modifiées dans {{site.product_short}} Studio.</p>
+    <p>Si vous essayez d'ouvrir une mise en page existante dans {{site.product_short}} Studio et que vous voyez ce message:</p>
+    <blockquote style="padding: 2em;border: 1px #999 solid;"><strong> Disposition non prise en charge<br><br>
+        Votre mise en page actuelle ne peut pas être modifiée dans cet outil. Contactez le support pour apporter des modifications. </strong></blockquote>
+    <p>vous devrez<a href="https://supportportal.brightcove.com"> contacter le support pour obtenir de</a> l'aide sur la mise à jour de la mise en page.</p>  </section><section class="bcls-section">
+    <h2 id="Page_creation_process">Processus de création de page</h2>
+    <p>Lors de la création d'une page, il vous est d'abord demandé d'entrer un titre pour la page, puis de choisir une mise en page:</p>   <figure class="bcls-figure"><img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/page-types-create-page.png" alt=""></figure>
+    <p>Ce document se concentre sur les mises en page, leur fonctionnalité et leur apparence. Pour plus d'informations sur l'ensemble du processus de création de pages, consultez le<a href="/layout/creating-managing-pages.html"> document</a> Création et gestion des pages.</p>  </section><section class="bcls-section">
+    <h2 id="Formatting_playlists">Formatage des listes</h2>
+    <p>Vous disposez d'une certaine flexibilité lorsque vous placez des listes de lecteur sur une page. Si vous cliquez sur les trois points de suspension (trois points) en regard du nom de la liste de lecteur</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/three-dots-to-edit.png" alt="trois points à modifier"> </figure>
+    <p>vous ouvrez la boîte de dialogue des paramètres de la playlist. Plusieurs options de manipulation des listes de lecteur sont présentées ici.</p>
+    <p>Lorsque vous cliquez sur<span class="button-blue"> Plus d'options</span> de mise en page, la boîte de dialogue de mise en page de la liste de lecteur apparaît, dans laquelle d'autres options</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/playlist-layout-options.png" alt="options de disposition de playlist"> </figure>
+    <p>Toutes les listes de lecteur de chaque mise en page ne proposent pas toutes les options. Les restrictions seront répertoriées le cas échéant pour chaque mise en page.</p>
+    <p>Pour plus de détails sur la gestion et la configuration des listes de lecteur, consultez le<a href="/layout/managing-playlists-on-pages.html"> document</a> Gérer les listes de lecteur sur Pages.</p>  </section><section class="bcls-section">
+    <h2 id="Playlist_Grid">Grille Playlist</h2>
+    <p>Notez les points suivants concernant la mise en<strong> page Grille de</strong> liste de lecteur:</p>
     <ul>
       <li>
-        The <strong>Playlist Grid</strong> displays one or more playlists in grids, meaning thumbnails for all the videos in the playlist will appear on the page. If multiple playlists are selected the playlists names will appear as tabs at the top of the app page, as shown here:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/playlist-grid-wide.png" alt="grid page">
-        </figure>
+        La grille des listes de<strong> lecteur</strong> affiche une ou plusieurs listes de lecteur dans des grilles, ce qui signifie que les miniatures de toutes les vidéos de la liste de lecteur apparaîtront sur la page. Si plusieurs listes de lecteur sont sélectionnées, les noms des listes de lecteur apparaîtront sous forme d'onglets en haut de la page de l'application, comme illustré ici: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/playlist-grid-wide.png" alt="page de la grille"> </figure>
       </li>
-      <li>Note that if only one playlist is displayed no playlist name will appear. In this case, you would want to be sure the page name reflected the content of the playlist.</li>
+      <li>Notez que si une seule liste de lecteur est affichée, aucun nom de liste de lecteur n'apparaîtra. Dans ce cas, vous devez vous assurer que le nom de la page reflète le contenu de la liste de lecteur.</li>
       <li>
-        The page layout is responsive. The following screenshot shows the same page previously shown, but at a narrower browser width. Note the the thumbnails are only four across whereas in the wider browser they were five across.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/playlist-grid-narrow.png" alt="narrower grid">
-        </figure>
+        La mise en page est réactive. La capture d'écran suivante montre la même page que celle précédemment affichée, mais avec une largeur de navigateur plus étroite. Notez que les vignettes ne sont que de quatre, alors que dans le navigateur plus large, elles étaient de cinq. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/playlist-grid-narrow.png" alt="grille plus étroite"> </figure>
       </li>
       <li>
-        If the number of playlists added to the page makes the playlist name tabs wider than space available, an arrow is added to the right side of the tab list to provide a way to see all the tabs, as shown here:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/many-tabs.png" alt="arrow for tabs">
-        </figure>
-        Once you reach the end, the arrow appears on the left side.
+        Si le nombre de listes de lecteur ajoutées à la page rend les onglets de nom de la liste de lecteur plus larges que l'espace disponible, une flèche est ajoutée sur le côté droit de la liste d'onglets pour permettre de voir tous les onglets, comme illustré ci-dessous: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/many-tabs.png" alt="flèche pour les onglets"> </figure> Une fois que vous atteignez la fin, la flèche apparaît sur le côté gauche.
       </li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Hero_Autoplay_Channel">Hero (Autoplay Channel)</h2>
-    <p>Note the following about the <strong>Hero (Autoplay Channel)</strong> page layout:</p>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Hero_Autoplay_Channel">Hero (chaîne Autoplay)</h2>
+    <p>Notez ce qui suit à propos de la mise en<strong> page</strong> Hero (Autoplay Channel):</p>
     <ul>
-      <li>Feature a channel as fullscreen, autoplaying video. Play the following video to see the behavior.
-        <iframe src="https://players.brightcove.net/1752604059001/default_default/index.html?videoId=1700212308193411817" allowfullscreen="" allow="encrypted-media" width="790" height="400"></iframe>
+      <li>Présenter une chaîne en mode plein écran à lecteur automatique. Regardez la vidéo suivante pour voir le comportement. <iframe src="https://players.brightcove.net/1752604059001/default_default/index.html?videoId=1700212308193411817" allowfullscreen="" allow="encrypted-media" width="790" height="400"></iframe>
       </li>
-      <li>Additional playlists display as carousels.</li>
-      <li>Valid video content for the playlist with channel are:
+      <li>Les listes de lecteur supplémentaires apparaissent sous forme de carrousels.</li>
+      <li>Le contenu vidéo valide pour la liste de lecteur avec chaîne est:
         <ul>
-          <li>A {{ site.product }} channel</li>
-          <li>A Cloud Playout channel created in Studio</li>
+          <li>Une chaîne {{site.product}}</li>
+          <li>Une chaîne Cloud Playout créée dans Studio</li>
         </ul>
       </li>
-      <li>The page is responsive. The playing video reduces in size and the carousels' thumbnails shrink in size and fewer are displayed.</li>
-      <li>No layout changes are allowed on the autoplay channel.</li>
-      <li>There is a fallback feature that can be confusing if you are not aware of it. If for some reason the featured autoplay playlist cannot play, the first playlist in the normal list of playlist will be "promoted" into the autoplay position. The following diagram further clarifies the feature:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-autoplay.png" alt="hero autoplay fallback">
-        </figure>
+      <li>La page est réactive. La taille de la vidéo en cours de lecteur diminue et la taille des vignettes des carrousels diminue et moins d'entre elles sont affichées.</li>
+      <li>Aucune modification de mise en page n'est autorisée sur le canal de lecteur automatique.</li>
+      <li>Il existe une fonctionnalité de secours qui peut prêter à confusion si vous n'en êtes pas conscient. Si, pour une raison quelconque, la liste de lecteur automatique sélectionnée ne peut pas être lue, la première liste de lecteur de la liste normale de lecteur sera promue-fr/ en position de lecteur automatique. Le schéma suivant clarifie davantage la fonctionnalité: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-autoplay.png" alt="repli de la lecteur automatique des héros"> </figure>
       </li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Hero_Featured_Playlist">Hero (Featured Playlist)</h2>
-    <p>Note the following about the <strong>Hero (Featured Playlist)</strong> page layout:</p>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Hero_Featured_Playlist">Hero (Playlist en vedette)</h2>
+    <p>Notez ce qui suit à propos de la mise en<strong> page</strong> Hero (Playlist en vedette):</p>
     <ul>
-      <li>The featured playlist appears at the top of the page with its thumbnails larger within a carousel than other playlists' thumbnails on the page, as shown here:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-playlist-wide.png" alt="hero playlist wide">
-        </figure>
+      <li>La liste de lecteur sélectionnée apparaît en haut de la page avec ses vignettes plus grandes dans un carrousel que celles des autres listes de lecteur sur la page, comme illustré ici: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-playlist-wide.png" alt="Hero Playlist Large"> </figure>
       </li>
-      <li>As seen in the screenshot just above, additional playlists added to the page display below the featured playlist in carousels, using smaller thumbnails.</li>
-      <li>The page layout is responsive. The following screenshot shows the same page previously shown, but at a narrower browser width. Note the the thumbnails are only two across for the featured playlist whereas in the wider browser they were three across.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-playlist-narrow.png" alt="hero playlist narrow">
-        </figure>
+      <li>Comme le montre la capture d'écran ci-dessus, les listes de lecteur supplémentaires ajoutées à la page s'affichent sous la liste de lecteur sélectionnée dans les carrousels, avec des vignettes plus petites.</li>
+      <li>La mise en page est réactive. La capture d'écran suivante montre la même page que celle précédemment affichée, mais avec une largeur de navigateur plus étroite. Notez que les vignettes ne sont que de deux pour la playlist présentée, alors que dans le navigateur plus large, elles étaient de trois. <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-playlist-narrow.png" alt="playlist héros étroit"> </figure>
       </li>
-      <li>In the featured playlist, you do not have the option to display the thumbnails in portrait orientation.</li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Hero_Image">Hero (Image)</h2>
-    <p>Note the following about the <strong>Hero (Image)</strong> page layout:</p>
+      <li>Dans la liste de lecteur sélectionnée, vous n'avez pas la possibilité d'afficher les miniatures en mode portrait.</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Hero_Image">Héros (Image)</h2>
+    <p>Notez ce qui suit à propos de la mise en<strong> page</strong> Hero (Image):</p>
     <ul>
-      <li>The hero image appears mostly visible with added playlists overlaying the image near the bottom of the app page, as shown here:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-image.png" alt="hero image">
-        </figure>
+      <li>L'image du héros apparaît principalement visible avec des listes de lecteur ajoutées superposées à l'image en bas de la page de l'application, comme indiqué ici: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/hero-image.png" alt="image du héros"> </figure>
       </li>
-      <li>Additional playlists display as carousels.</li>
-      <li>The page is responsive. The hero image reduces in size and the carousels' thumbnails shrink in size and fewer are displayed.</li>
-    </ul>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Carousels">Carousels</h2>
-    <p>Note the following about the <strong>Carousels</strong> page layout:</p>
+      <li>Les listes de lecteur supplémentaires apparaissent sous forme de carrousels.</li>
+      <li>La page est réactive. La taille de l'image principale diminue et les vignettes des carrousels sont réduites et moins nombreuses sont affichées.</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="Carousels">Carrousels</h2>
+    <p>Notez ce qui suit à propos de la mise en<strong> page</strong> Carrousels:</p>
     <ul>
-      <li>A new carousels is added for each playlist placed on the page, as shown here:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/carousels.png" alt="carousels">
-        </figure>
+      <li>Un nouveau carrousel est ajouté pour chaque playlist placée sur la page, comme illustré ici: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/carousels.png" alt="carrousels"> </figure>
       </li>
-      <li>A chevron <img src="/assets/images/s-layout-img/using-page-layouts/chevron.png" alt="chevron"> appears at either end of carousel for navigation to all the videos in the playlist.</li>
-      <li>The page is responsive. Here is a narrower view of the page, and also one of the playlist is shown using portrait orientation thumbnails:
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/carousels-with-portrait.png" alt="carousels with portrait">
-        </figure>
+      <li>Un chevron <img src="/assets/images/s-layout-img/using-page-layouts/chevron.png" alt="chevron"> apparaît à chaque extrémité du carrousel pour accéder à toutes les vidéos de la liste de lecteur.</li>
+      <li>La page est réactive. Voici une vue plus étroite de la page, et l'une des listes de lecteur est également affichée à l'aide de vignettes d'orientation portrait: <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-layout-img/using-page-layouts/carousels-with-portrait.png" alt="carrousels avec portrait"> </figure>
       </li>
-    </ul>
-  </section>
-
-</article>
+    </ul>  </section></article>
